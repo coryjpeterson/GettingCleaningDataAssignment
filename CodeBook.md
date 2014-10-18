@@ -14,6 +14,7 @@ Output: Two data frames (cleandata, and cleandatasummary) and a txt file (Summar
     
 ---
 Data Frame:  cleandata
+
 Contents: Contains the tidy data set of both training and test data along with the subject and activity performed at the point of the measurement.
 
 Variables:
@@ -24,6 +25,7 @@ Variables:
 
 ---
 Data Frame: cleandatasummary
+
 Contents: Contains the tidy data set summary of cleandata containing the average of each variable for each activity and each subject.
 
 Variables:
