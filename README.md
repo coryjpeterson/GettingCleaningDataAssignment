@@ -1,20 +1,31 @@
 ---
 title: "README"
+author: "Cory Peterson"
+date: "October 18, 2014"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This document outlines the R code created to complete the programming project for the Getting and Cleaning Data class offered by John Hopkins University offered through Coursera.org.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
-```{r}
-summary(cars)
-```
+There are three files associated with the assignment and attached in the Git repo.  
 
-You can also embed plots, for example:
+The files are:
+- README.md: this file
+- CodeBook.md: a description file that outlines variables, the data, and any transformation conducted to clean up the data set.
+- run_analysis.R: the program that cleans the data set.
 
-```{r, echo=FALSE}
-plot(cars)
-```
+The data set linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+Here are the data for the project: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Input: The run_analysis.R program must be run in the UCI HAR Dataset folder of the data set provided above.  This directory contains the README.txt file for the data.
+
+Output: Two data frames (cleandata, and cleandatasummary) and a txt file (SummaryTidyData.txt.)
+  The data frames structure and contents are described in the CodeBook.md document.
+
