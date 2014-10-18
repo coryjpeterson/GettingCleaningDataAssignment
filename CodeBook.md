@@ -35,13 +35,13 @@ Variables:
 ---
 Transformation Overview:
 
-1) The training and test data was read into independent data.frames.  Six files total: test and training (x,y,subject)
-2) The x_train and x_test data measurements were used to calculate each observation (row) mean and sd.  The train and test tables were overwritten with two vectors for mean and average
-3) A DPLYR data frame was created consolidating x,y,subject tables for both training and test.  This left us with two data frames for training and test with 4 variables (subject,activity,mean, and standard deviation)
-4) New column names for the two data frames were written to be more descriptive. (Subject, Activity, Mean, SD)
-5) The two data frames, training and test, were row binded together forming one data set.
-6) The Activity variable was transformed from its integer representation for variable to a more descriptive verb. (see activity_labels.txt from the original data source)
-7) The cleandata dataframe represents the steps 1 through 6.  The next steps are how cleandatasummary was transformed.
-8) Using the data frame, cleandata, the data frame was grouped by Subject and Activity then all other variable (Mean and SD) were used to calculate the average across those groups.  This was saved as a new data frame cleandatasummary.
-9) For cleandatasummary, variables Mean and SD were renamed to reflect they are now averages over the groups. (Average Mean, and Average SD)
+1. The training and test data was read into independent data.frames.  Six files total: test and training (x,y,subject)
+2. The x_train and x_test data measurements were used to calculate each observation (row) mean and sd.  The train and test tables were overwritten with two vectors for mean and average
+3. A DPLYR data frame was created consolidating x,y,subject tables for both training and test.  This left us with two data frames for training and test with 4 variables (subject,activity,mean, and standard deviation)
+4. New column names for the two data frames were written to be more descriptive. (Subject, Activity, Mean, SD)
+5. The two data frames, training and test, were row binded together forming one data set.
+6. The Activity variable was transformed from its integer representation for variable to a more descriptive verb. (see activity_labels.txt from the original data source)
+7. The cleandata dataframe represents the steps 1 through 6.  The next steps are how cleandatasummary was transformed.
+8. Using the data frame, cleandata, the data frame was grouped by Subject and Activity then all other variable (Mean and SD) were used to calculate the average across those groups.  This was saved as a new data frame cleandatasummary.
+9. For cleandatasummary, variables Mean and SD were renamed to reflect they are now averages over the groups. (Average Mean, and Average SD)
 
